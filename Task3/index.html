@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>My Portfolio</title>
+</head>
+<body>
+ <!-- ── NAV ── -->
+<nav>
+  <div class="nav-logo">KM</div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#testimonials">Testimonials</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="#contact" class="btn-primary" style="padding:10px 24px;font-size:11px;">Hire Me</a>
+</nav>
+
+<!-- ── RAIN CANVAS ── -->
+<canvas id="rain-canvas"></canvas>
+
+<!-- ── HERO ── -->
+<section id="hero">
+  <div class="hero-grid">
+    <div class="hero-content">
+      <div class="hero-eyebrow">Frontend Developer</div>
+      <h1 class="hero-name">Karen<br><em>Mensah</em></h1>
+      <p class="hero-title">Building Clean, Purposeful Web Experiences</p>
+      <p class="hero-bio">
+        I craft responsive, user-centered interfaces with a keen eye for detail and a passion
+        for clean code. From elegant layouts to interactive experiences, I bring ideas to life
+        on the web — one pixel at a time.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn-primary">View My Work</a>
+        <a href="#contact" class="btn-outline">Get In Touch</a>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="hero-card">
+        <div class="hero-initials">KM</div>
+        <div class="hero-card-name">Karen Mensah</div>
+        <div class="hero-card-role">Frontend Developer</div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-num">4</span>
+            <span class="stat-label">Projects</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">2</span>
+            <span class="stat-label">Certs</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">3+</span>
+            <span class="stat-label">Skills</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── ABOUT ── -->
+<section id="about">
+  <div class="about-grid">
+    <div class="about-text">
+      <div class="section-label">About Me</div>
+      <h2 class="section-title" style="margin-bottom:28px;">Passionate About<br><em style="font-style:italic;color:var(--gold);">Crafting the Web</em></h2>
+      <p>
+        I'm Karen Mensah, a dedicated Frontend Developer with a strong foundation in HTML, CSS,
+        and JavaScript. I thrive on transforming design concepts into clean, functional, and
+        responsive web experiences that users genuinely enjoy.
+      </p>
+      <p>
+        Beyond frontend development, I hold a foundational interest in cybersecurity — understanding
+        that building secure, trustworthy applications is just as important as building beautiful ones.
+        I'm constantly learning, growing, and pushing the boundaries of what I can create.
+      </p>
+      <p>
+        Whether it's a sleek portfolio, a music player, or a dynamic restaurant page, I approach
+        every project with professionalism, creativity, and attention to detail.
+      </p>
+
+      <div class="about-certs">
+        <div class="cert-item">
+          <div class="cert-icon">🏅</div>
+          <div class="cert-details">
+            <div class="cert-name">Responsive Web Design</div>
+            <div class="cert-org">freeCodeCamp — Certified</div>
+          </div>
+        </div>
+        <div class="cert-item">
+          <div class="cert-icon">🔐</div>
+          <div class="cert-details">
+            <div class="cert-name">Introduction to Cybersecurity</div>
+            <div class="cert-org">Simplilearn — Certified</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="about-aside">
+      <div class="info-block">
+        <div class="info-label">Full Name</div>
+        <div class="info-value">Karen Mensah</div>
+      </div>
+      <div class="info-block">
+        <div class="info-label">Role</div>
+        <div class="info-value">Frontend Developer</div>
+      </div>
+      <div class="info-block">
+        <div class="info-label">Email</div>
+        <div class="info-value"><a href="mailto:abakaren18@gmail.com">abakaren18@gmail.com</a></div>
+      </div>
+      <div class="info-block">
+        <div class="info-label">Phone</div>
+        <div class="info-value"><a href="tel:0249628720">0249 628 720</a></div>
+      </div>
+      <div class="info-block">
+        <div class="info-label">LinkedIn</div>
+        <div class="info-value"><a href="https://www.linkedin.com/in/karen-mensah-7b446a332" target="_blank">linkedin.com/in/karen-mensah</a></div>
+      </div>
+      <div class="info-block">
+        <div class="info-label">Interests</div>
+        <div class="info-value">Web Development · Cybersecurity · UI Design</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── SKILLS ── -->
+<section id="skills">
+  <div class="section-label">What I Know</div>
+  <h2 class="section-title">Skills &amp; Expertise</h2>
+
+  <div class="skills-grid">
+    <div class="skill-card">
+      <div class="skill-icon">🌐</div>
+      <div class="skill-name">HTML5</div>
+      <div class="skill-bar-bg"><div class="skill-bar-fill" style="width:90%"></div></div>
+      <div class="skill-level">Advanced — Semantic &amp; Accessible Markup</div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon">🎨</div>
+      <div class="skill-name">CSS3</div>
+      <div class="skill-bar-bg"><div class="skill-bar-fill" style="width:85%"></div></div>
+      <div class="skill-level">Advanced — Layouts, Animations &amp; Responsive Design</div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon">⚡</div>
+      <div class="skill-name">JavaScript</div>
+      <div class="skill-bar-bg"><div class="skill-bar-fill" style="width:60%"></div></div>
+      <div class="skill-level">Intermediate — DOM, Events &amp; Interactivity</div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon">📱</div>
+      <div class="skill-name">Responsive Design</div>
+      <div class="skill-bar-bg"><div class="skill-bar-fill" style="width:88%"></div></div>
+      <div class="skill-level">Advanced — Mobile-First &amp; Cross-Device</div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon">🔐</div>
+      <div class="skill-name">Cybersecurity Fundamentals</div>
+      <div class="skill-bar-bg"><div class="skill-bar-fill" style="width:45%"></div></div>
+      <div class="skill-level">Foundational — Security Concepts &amp; Best Practices</div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon">🛠</div>
+      <div class="skill-name">Web Tools &amp; Workflow</div>
+      <div class="skill-bar-bg"><div class="skill-bar-fill" style="width:70%"></div></div>
+      <div class="skill-level">Intermediate — Git, GitHub &amp; Dev Tools</div>
+    </div>
+  </div>
+</section>
+
+<!-- ── PROJECTS ── -->
+<section id="projects">
+  <div class="section-label">My Work</div>
+  <h2 class="section-title">Featured Projects</h2>
+
+  <div class="projects-grid">
+    <div class="project-card">
+      <div class="project-num">01</div>
+      <div class="project-name">Restaurant Page</div>
+      <div class="project-desc">
+        A fully responsive restaurant landing page featuring a rich menu layout, inviting
+        visuals, and smooth navigation. Designed to drive customer engagement with a clean,
+        appetizing aesthetic.
+      </div>
+      <div class="project-tags">
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+        <span class="tag">Responsive</span>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-num">02</div>
+      <div class="project-name">Contact Form</div>
+      <div class="project-desc">
+        An interactive, validated contact form with real-time user feedback. Clean layout
+        with accessible input fields, error handling, and a professional submission experience.
+      </div>
+      <div class="project-tags">
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+        <span class="tag">JavaScript</span>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-num">03</div>
+      <div class="project-name">Calculator — CALC X9</div>
+      <div class="project-desc">
+        A fully functional retro-terminal styled calculator supporting all arithmetic
+        operations. Features keyboard support, expression history, and a striking
+        cyberpunk-inspired UI that stands out from the crowd.
+      </div>
+      <div class="project-tags">
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+        <span class="tag">JavaScript</span>
+        <span class="tag">UI Design</span>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-num">04</div>
+      <div class="project-name">Music Player</div>
+      <div class="project-desc">
+        A sleek music player interface with full audio controls including play, pause,
+        next, and previous. Features a progress bar, volume control, song info display,
+        and playlist management.
+      </div>
+      <div class="project-tags">
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+        <span class="tag">JavaScript</span>
+        <span class="tag">Audio API</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── TESTIMONIALS ── -->
+<section id="testimonials">
+  <div class="section-label">Kind Words</div>
+  <h2 class="section-title">What People Say</h2>
+
+  <div class="testi-grid">
+    <div class="testi-card">
+      <div class="testi-quote">"</div>
+      <p class="testi-text">
+        Working with Karen was an absolute pleasure. Her attention to detail is remarkable —
+        she delivered a clean, polished interface that exceeded our expectations. What impressed
+        me most was how she took a simple brief and turned it into something truly professional.
+        Karen has a natural eye for design and a real dedication to getting things right.
+      </p>
+      <div class="testi-author">
+        <div class="testi-avatar">KM</div>
+        <div>
+          <div class="testi-name">Keziah Mensah</div>
+          <div class="testi-role">Colleague &amp; Collaborator</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testi-card">
+      <div class="testi-quote">"</div>
+      <p class="testi-text">
+        Karen brings both creativity and reliability to every project she touches. She has
+        a strong grasp of responsive design and always ensures her work looks great on every
+        screen. Beyond her technical skills, she communicates clearly and is genuinely passionate
+        about building meaningful web experiences. I would recommend her without hesitation.
+      </p>
+      <div class="testi-author">
+        <div class="testi-avatar">HA</div>
+        <div>
+          <div class="testi-name">Harry Amponsah</div>
+          <div class="testi-role">Peer &amp; Reviewer</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── RESUME ── -->
+<section id="resume">
+  <div class="resume-inner">
+    <div class="section-label" style="justify-content:center;">Resume</div>
+    <h2 class="section-title">My Qualifications</h2>
+    <p>A passionate frontend developer with hands-on project experience, certified in Responsive Web Design and Cybersecurity fundamentals — ready to bring value to any team.</p>
+
+    <div class="resume-highlights">
+      <div class="rh-item">
+        <span class="rh-num">4</span>
+        <span class="rh-label">Projects Built</span>
+      </div>
+      <div class="rh-item">
+        <span class="rh-num">2</span>
+        <span class="rh-label">Certifications</span>
+      </div>
+      <div class="rh-item">
+        <span class="rh-num">3+</span>
+        <span class="rh-label">Core Skills</span>
+      </div>
+    </div>
+
+    <a href="mailto:abakaren18@gmail.com?subject=Resume Request" class="btn-primary">Request My CV</a>
+  </div>
+</section>
+
+<!-- ── CONTACT ── -->
+<section id="contact">
+  <div class="section-label">Let's Talk</div>
+  <h2 class="section-title">Get In Touch</h2>
+
+  <div class="contact-grid">
+    <div class="contact-info">
+      <div class="contact-item">
+        <div class="contact-icon">✉</div>
+        <div>
+          <div class="contact-detail-label">Email</div>
+          <div class="contact-detail-value"><a href="mailto:abakaren18@gmail.com">abakaren18@gmail.com</a></div>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">📞</div>
+        <div>
+          <div class="contact-detail-label">Phone</div>
+          <div class="contact-detail-value"><a href="tel:0249628720">024 962 8720</a></div>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">🔗</div>
+        <div>
+          <div class="contact-detail-label">LinkedIn</div>
+          <div class="contact-detail-value">
+            <a href="https://www.linkedin.com/in/karen-mensah-7b446a332" target="_blank">linkedin.com/in/karen-mensah</a>
+          </div>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">📍</div>
+        <div>
+          <div class="contact-detail-label">Availability</div>
+          <div class="contact-detail-value">Open to Opportunities</div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <form class="contact-form" onsubmit="handleSubmit(event)">
+        <div class="form-group">
+          <label class="form-label">Your Name</label>
+          <input class="form-input" type="text" placeholder="John Doe" required />
+        </div>
+        <div class="form-group">
+          <label class="form-label">Email Address</label>
+          <input class="form-input" type="email" placeholder="john@example.com" required />
+        </div>
+        <div class="form-group">
+          <label class="form-label">Subject</label>
+          <input class="form-input" type="text" placeholder="Project Inquiry" />
+        </div>
+        <div class="form-group">
+          <label class="form-label">Message</label>
+          <textarea class="form-textarea" placeholder="Tell me about your project..."></textarea>
+        </div>
+        <button type="submit" class="btn-primary" style="border:none;width:100%;font-size:13px;padding:16px;">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div class="footer-logo">Karen Mensah</div>
+  <div class="footer-copy">© 2025 Karen Mensah. All rights reserved.</div>
+  <div class="footer-links">
+    <a href="#hero">Top</a>
+    <a href="#projects">Work</a>
+    <a href="mailto:abakaren18@gmail.com">Email</a>
+    <a href="https://www.linkedin.com/in/karen-mensah-7b446a332" target="_blank">LinkedIn</a>
+  </div>
+</footer>
+<script></script>
+</body>
+</html>

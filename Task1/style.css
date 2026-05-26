@@ -1,0 +1,225 @@
+/*All*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+  /*Background*/
+  background: radial-gradient(circle at bottom,#1A0A35,#0c6fd8,#355966);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/*Main Calculator Container*/
+.calculator-container{
+  background: rgba(35, 20, 60, 0.4);
+  border-radius: 28px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3),
+  0 0 25px rgba(0, 200, 200, 0.15);
+  width: 100%;
+  max-width: 360px;
+  padding: 25px;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/*Project badge*/
+.project-badge{
+  text-align: center;
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 400;
+ letter-spacing: 0.5px;
+ margin-bottom: 18px;
+ opacity: 0.8;
+ font-display:block;
+ font-style: oblique;
+}
+
+/*Display Screen*/
+.display-section{
+  border-radius: 16px;
+  padding: 22px 18px;
+  background: rgba(20, 10, 35, 0.6);
+  text-align: right;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 22px;
+  box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.previous-section{
+  color: rgba(0, 230, 230, 0.6);
+  font-size: 42px;
+  min-height: 22px;
+}
+
+.current-section{
+  color: #00F0F0;
+  font-size: 42px;
+  font-weight: 600;
+  text-shadow: 0 0 8px rgba(0, 240, 240, 0.5);
+}
+
+/*Buttons Grid*/
+.button-grid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+
+/*General button styles*/
+.btn{
+  padding: 16px;
+  font-size: 22px;
+  font-weight: 500;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  background: rgba(60, 30, 90, 0.35);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2), inset 0 0 0 1px rgba(255, 255, 255,
+  0.05), 0 0 12px rgba(255, 255, 255, 0.15);
+}
+
+
+.btn:hover{
+  transform: translateY(2px);
+}
+
+.btn:active{
+  transform: translateY(0);
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.2), inset 0 0 0 1px 
+  rgba(255, 255, 255, 0.05);
+}
+
+
+.btn-clear{
+  background: linear-gradient(270deg, #612458, #B82090);
+  color: #ffffff;
+  text-shadow: 0 0 6px rgba(255,255,255,0.5), inset 0 0 0 1px rgba(255,255,255,0.1);
+
+}
+
+.btn-clear:hover{
+  box-shadow: 0 6px 16px rgba(180,30,150,0.35),inset 0 0 0 1px rgba(255, 255, 255, 0.15);
+  
+}
+
+.btn-delete{
+  background: linear-gradient(270deg, #7030A0, #9040C0);
+  color: #ffffff;
+ text-shadow: 0 0 6px rgba(255,255,255,0.5);
+ box-shadow: 0 4px 12px rgba(120,50,170,0.25),inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+
+}
+
+.btn-delete:hover{
+    box-shadow: 0 6px 16px rgba(120,50,170,0.35),inset 0 0 0 1px rgba(255, 255, 255, 0.15),
+    0 0 15px rgba(140,60,190,0.4);
+ 
+}
+
+/*Operator Buttons*/
+.btn-operator{
+  background: linear-gradient(135deg,#ff49e4, #7155ea);
+  text-shadow: 0 0 6px rgba(255,255,255,0.5);
+ box-shadow: 0 4px 12px rgba(176, 129, 209, 0.25),inset 0 0 0 1px rgba(71, 89, 210, 0.914);
+}
+
+.btn-operator:hover{
+   box-shadow: 0 6px 16px rgba(120,50,170,0.35),inset 0 0 0 1px rgba(255, 255, 255, 0.15),
+    0 0 15px rgba(140,60,190,0.4);
+}
+
+/*Number Buttons*/
+.btn-number{
+  background: linear-gradient(135deg,#402070,#503090);
+  color: #B0EFFF;
+  text-shadow: 0 0 5px rgba(176, 239, 255, .4), inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+
+}
+
+.btn-number:hover{
+  box-shadow: 0 6px 16px rgba(80,50,130,0.35),inset 0 0 0 1px rgba(255, 255, 255, 0.12),
+    0 0 15px rgba(120,90,180,0.3);
+}
+
+/*Equal Button*/
+.btn-equal{
+  background: linear-gradient(135deg,#00B0B0, #00D0c0);
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0,176,176,0.3),inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+  text-shadow: 0 0 6px rgba(255, 255, 255, .5);
+  grid-row: span 2;
+
+}
+
+.zer0-btn{
+  grid-column: span 2;
+}
+
+.btn-equal:hover{
+   box-shadow: 0 6px 16px rgba(0,176,176,0.4),inset 0 0 0 1px rgba(255, 255, 255, 0.15),
+   0 0 18px rgba(0,210,192,0.5);
+}
+
+/* -- MOBILE VIEW ONLY --- */
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+
+  .calculator-container {
+    padding: 15px;
+    border-radius: 20px;
+  }
+
+  .project-badge {
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+  }
+
+  .display-section {
+    padding: 15px 12px;
+    min-height: 70px;
+    margin-bottom: 15px;
+  }
+
+  .previous-section {
+    font-size: 22px;
+  }
+
+  .current-section {
+    font-size: 28px;
+  }
+
+  .button-grid {
+    gap: 10px;
+  }
+
+  .btn {
+    padding: 12px 8px;
+    font-size: 18px;
+    border-radius: 12px;
+  }
+
+  .zer0-btn{
+  grid-column: span 2;
+}
+
+}
